@@ -20,4 +20,4 @@ while [[ "${guess}" != "${MY_NUMBER}" ]]; do
   (( guesses += 1 ))
 done
 
-echo "You WON after ${guesses} guesses !!!!!!!!!!!!!!!!!!"
+echo "You Won after ${guesses} guesses !!!!!!!!!!!!!!!!!!"
