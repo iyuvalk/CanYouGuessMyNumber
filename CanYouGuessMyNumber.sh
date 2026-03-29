@@ -11,7 +11,7 @@ MY_NUMBER=$( expr "$RANDOM" % 100 )
 guesses=1
 read -p "What is your guess? " guess
 while [[ "${guess}" != "${MY_NUMBER}" ]]; do
-  if [[ "${guess}" > "${MY_NUMBER}" ]]; then
+  if [[ ${guess} -gt ${MY_NUMBER} ]]; then
     echo "That is too big"
   else
     echo "That is too small"
