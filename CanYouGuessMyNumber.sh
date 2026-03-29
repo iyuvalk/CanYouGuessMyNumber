@@ -1,13 +1,14 @@
 #!/bin/bash
 
+MAX=100
 echo "Wellcome to the CanYouGuessMyNumber Game!"
 echo "========================================="
 echo
-echo "I have a number in mind. Can you guess it?"
+echo "I have a number in mind. It is between 0 and $MAX. Can you guess it?"
 echo ""
 echo ""
 
-MY_NUMBER=$( expr "$RANDOM" % 100 )
+MY_NUMBER=$( expr "$RANDOM" % $MAX )
 guesses=1
 read -p "What is your guess? " guess
 while [[ "${guess}" != "${MY_NUMBER}" ]]; do
